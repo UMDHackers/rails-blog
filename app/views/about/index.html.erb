@@ -1,2 +1,81 @@
-<h1>About</h1>
-<p>Here is information about the club and the members</p>
+<head>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+	
+	<div id='cssmenu' class = "navbar-fixed-top">
+	<ul>
+	   <li><%= link_to 'Home', controller: 'welcome' %></li>
+	   <li class='active'><%= link_to 'About', controller: 'about' %></li>
+	   <li><%= link_to 'Schedule', controller: 'schedule'%></li>
+	   <li><%= link_to 'Forum/Blog posts', controller: 'blog' %></li>
+	   <li><%= link_to 'Contact', controller: 'contact'%></li>
+	   <li class='last'><%= link_to 'Profile', controller: 'profile'%></li>
+	</ul>
+	</div>
+	<br><br><br><br>
+	
+	<div class = "container" id = "about_us">
+	    <h2>About us</h2>
+	    <hr>
+	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed dolor in magna gravida mollis eget vitae enim. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam non tortor et magna convallis porttitor. Cras ullamcorper et nunc ac pretium. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi viverra felis non nibh accumsan, vel hendrerit lectus pellentesque. Nunc eget efficitur leo, sit amet tempor sem. Ut eu magna ex. Mauris et metus tellus. Suspendisse sit amet turpis nulla. Mauris porttitor gravida ipsum ut rutrum. In elementum dictum elit, ut auctor lacus hendrerit et.</p>
+	    <br><br>
+	    <h2>Techologies</h2>
+	    <hr>
+	    <ul id= "list_1">
+		<li>HTML5 -  Aliquam non tortor et magna convallis porttitor. Cras ullamcorper et nunc ac pretium</li>
+		<li>CSS3  -  Aliquam non tortor et magna convallis porttitor. Cras ullamcorper et nunc ac pretium</li>
+		<li>JAVASCRIPT -  Aliquam non tortor et magna convallis porttitor. Cras ullamcorper et nunc ac pretium</li>
+		<li>Bootstrap/Skeleton - Aliquam non tortor et magna convallis porttitor. Cras ullamcorper et nunc ac pretium</li>
+		<li>Rails -  Aliquam non tortor et magna convallis porttitor. Cras ullamcorper et nunc ac pretium</li>
+	    </ul>
+ 	    <br>
+	   <h2>Members</h2>
+	   <hr>
+	   <div class = "members">
+		<div class = "member1">
+		  <%= image_tag(("anonymous.jpg"), :class => "col-md-3") %>
+		  <div class = "col-md-8 ">
+		    <h4>First Name, Last Name</h4>
+		    <h6>JOB TITLE, YEAR APPOINTED</h6>
+		    <hr>
+		    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed dolor in magna gravida mollis eget vitae enim. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam non tortor et magna convallis porttitor. </p>
+		  </div>
+		</div>
+		
+		<div class = "member1">
+		  <%= image_tag(("anonymous.jpg"), :class => "col-md-3") %>
+		  <div class = "col-md-8">
+		    <h4>First Name, Last Name</h4>
+		    <h6>JOB TITLE, YEAR APPOINTED</h6>
+		    <hr>
+		    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed dolor in magna gravida mollis eget vitae enim. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam non tortor et magna convallis porttitor. </p>
+		  </div>
+		</div>
+
+	   </div>
+	</div>
+
+	
+	<br><br><br>
+	<div id = "footer" class = "container-fluid navbar-fixed-bottom">
+	   <div class = "row">		
+		<div id = "contact" class="col-md-4">
+		  <nav>
+		    <i class="fa fa-twitter-square"></i>
+		    <i class="fa fa-facebook-square"></i>
+		    <i class="fa fa-envelope-square"></i>
+		    <i class="fa fa-google-plus-square"></i>
+		    <i class="fa fa-youtube-square"></i>
+		  </nav>
+		</div>
+		<div id = "logo2" class="col-md-4">
+		  <%= image_tag(("umd.gif"), :class => "logo") %>		
+		</div>
+		<div id = "logo3" class="col-md-4">
+		  <p>More information</p>
+		</div>
+	   </div>
+	</div> 
+</body>

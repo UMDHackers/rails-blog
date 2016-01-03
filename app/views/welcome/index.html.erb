@@ -4,7 +4,7 @@
 </head>
 <body>
 	
-	<div id='cssmenu'>
+	<div id='cssmenu' class = "navbar-fixed-top">
 	<ul>
 	   <li class='active'><%= link_to 'Home', controller: 'welcome' %></li>
 	   <li><%= link_to 'About', controller: 'about' %></li>
@@ -20,21 +20,24 @@
 	<div class = "text-center btn-xlarge">	
 	  <button type="button" class="btn btn-success">Learn More</button>
 	</div>	
-	<div id = "footer" class = "container-fluid navbar-bottom">
+	<div id = "footer" class = "container-fluid navbar-fixed-bottom">
+	   <div class = "row">
 		<div id = "contact" class="col-md-4">
 		  <nav>
 		    <i class="fa fa-twitter-square"></i>
 		    <i class="fa fa-facebook-square"></i>
 		    <i class="fa fa-envelope-square"></i>
 		    <i class="fa fa-google-plus-square"></i>
+		    <i class="fa fa-youtube-square"></i>
 		  </nav>
 		</div>
 		<div id = "logo2" class="col-md-4">
-		  <%= image_tag(("UMD-logo.png"), :class => "logo") %>		
+		  <%= image_tag(("umd.gif"), :class => "logo") %>		
 		</div>
 		<div id = "logo3" class="col-md-4">
-		  <p>hello</p>
+		  <p>More information</p>
 		</div>
+	    </div>
 	</div>
 </body>
 

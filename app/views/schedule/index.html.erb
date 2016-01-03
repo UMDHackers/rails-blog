@@ -1,2 +1,96 @@
-<h1>Schedule#index</h1>
-<p>Find me in app/views/schedule/index.html.erb</p>
+<head>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+	
+	<div id='cssmenu' class = "navbar-fixed-top">
+	<ul>
+	   <li><%= link_to 'Home', controller: 'welcome' %></li>
+	   <li><%= link_to 'About', controller: 'about' %></li>
+	   <li class='active'><%= link_to 'Schedule', controller: 'schedule'%></li>
+	   <li><%= link_to 'Forum/Blog posts', controller: 'blog' %></li>
+	   <li><%= link_to 'Contact', controller: 'contact'%></li>
+	   <li class='last'><%= link_to 'Profile', controller: 'profile'%></li>
+	</ul>
+	</div>
+	<br><br><br><br>
+
+	<div class = "container" id = "shedule_1">
+	   <h2>Shedule</h2>
+	   <hr>
+	   <div class = "inner">		               
+		 <table class="table">
+		    <thead>
+		      <tr>
+			<th>Description</th>
+			<th>Date</th>
+			<th>Time</th>
+			<th>Location</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		      <tr class="success">
+			<td>Introduction</td>
+			<td>2/3/2016</td>
+			<td>6:00pm - 7:00pm</td>
+			<td>CSIC 1500</td>
+		      </tr>
+		      <tr class="danger">
+			<td>HTML5/CSS3</td>
+			<td>2/23/2016</td>
+			<td>6:00pm - 7:00pm</td>
+			<td>CSIC 1500</td>
+		      </tr>
+		      <tr class="info">
+			<td>JavaScript</td>
+			<td>3/10/2016</td>
+			<td>6:00pm - 7:00pm</td>			
+			<td>CSIC 1500</td>
+		      </tr>
+		      <tr class="success">
+			<td>Bootstrap/Skeleton</td>
+			<td>3/23/2016</td>
+			<td>6:00pm - 7:00pm</td>
+			<td>CSIC 1500</td>
+		      </tr>
+		      <tr class="danger">
+			<td>Rails</td>
+			<td>4/3/2016</td>
+			<td>6:00pm - 7:00pm</td>
+			<td>CSIC 1500</td>
+		      </tr>
+		      <tr class="info">
+			<td>Advanced JavaScript</td>
+			<td>4/23/2016</td>
+			<td>6:00pm - 7:00pm</td>
+			<td>CSIC 1500</td>
+		      </tr>
+		    </tbody>
+		  </table>
+		    
+		<br>
+	</div>
+
+
+	
+	<div id = "footer" class = "container-fluid navbar-fixed-bottom">
+	   <div class = "row">		
+		<div id = "contact" class="col-md-4">
+		  <nav>
+		    <i class="fa fa-twitter-square"></i>
+		    <i class="fa fa-facebook-square"></i>
+		    <i class="fa fa-envelope-square"></i>
+		    <i class="fa fa-google-plus-square"></i>
+		    <i class="fa fa-youtube-square"></i>
+		  </nav>
+		</div>
+		<div id = "logo2" class="col-md-4">
+		  <%= image_tag(("umd.gif"), :class => "logo") %>		
+		</div>
+		<div id = "logo3" class="col-md-4">
+		  <p>More information</p>
+		</div>
+	   </div>
+	</div> 
+</body>
