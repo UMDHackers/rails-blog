@@ -1,7 +1,41 @@
-<h1>Welcome to the UMD Web developers club's offical site!</h1>
-<p>Navigation</p>
- Home, 
-<%= link_to 'About', controller: 'about' %>, 
-<%= link_to 'Schedule', controller: 'schedule'%>, 
-<%= link_to 'Forum/Blog posts', controller: 'blog' %>,
-<%= link_to 'Contact', controller: 'contact'%>, login/sign up
+<head>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+	
+	<div id='cssmenu'>
+	<ul>
+	   <li class='active'><%= link_to 'Home', controller: 'welcome' %></li>
+	   <li><%= link_to 'About', controller: 'about' %></li>
+	   <li><%= link_to 'Schedule', controller: 'schedule'%></li>
+	   <li><%= link_to 'Forum/Blog posts', controller: 'blog' %></li>
+	   <li><%= link_to 'Contact', controller: 'contact'%></li>
+	   <li class='last'><%= link_to 'Profile', controller: 'profile'%></li>
+	</ul>
+	</div>
+	<br><br><br><br>
+	<%= image_tag(("terapinLogo.png"), :class => "logo") %>
+	<h2 id = "intro">Welcome to the UMD Web developers club's offical site!</h2>
+	<div class = "text-center btn-xlarge">	
+	  <button type="button" class="btn btn-success">Learn More</button>
+	</div>	
+	<div id = "footer" class = "container-fluid navbar-bottom">
+		<div id = "contact" class="col-md-4">
+		  <nav>
+		    <i class="fa fa-twitter-square"></i>
+		    <i class="fa fa-facebook-square"></i>
+		    <i class="fa fa-envelope-square"></i>
+		    <i class="fa fa-google-plus-square"></i>
+		  </nav>
+		</div>
+		<div id = "logo2" class="col-md-4">
+		  <%= image_tag(("UMD-logo.png"), :class => "logo") %>		
+		</div>
+		<div id = "logo3" class="col-md-4">
+		  <p>hello</p>
+		</div>
+	</div>
+</body>
+
+
